@@ -1,37 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="style0.css">
-	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> <!-- Add Font Awesome CSS link -->
+    <title>Weather App</title>
 </head>
 <body>
+    <h1 class="heading">Weather App</h1> <!-- Add the heading here -->
 
-<header>
-	
-<nav>
-	<div class="logo"> <h1 style="font-size: 20px;"> Mera bharat </h1> </div>
-	<div class="menu">
-		<a href="#" style="font-size: ">Home</a>
-		<a href="#">gallery</a>
+    <div class="app-main">
+        <div class="searchInputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name..." autocomplete="off">
+        </div>
 
-		<a href="#">contact</a>
-	</div>
-</nav>
+        <div class="weather-body rain"> <!-- Add the "rain" class here -->
+            <div class="location-details">
+                <div class="city" id="city">Amravati, IN</div>
+                <div class="date" id="date">10 June (Wednesday), 2020</div>
+            </div>
 
-	<main>
-		<section>
-			<h3>Welcome To India</h3>
-			<h1>DO COME & VISIT <span class="change_content"> </span> <span style="margin-top: -10px;"> | </span> </h1>
-			<p>"India once is not enough"</p>
-			<a href="#" class="btnone">learn more</a>
-			<a href="#" class="btntwo">signup here</a>
-		</section>
-	</main>
+            <div class="weather-status">
+                <div class="temp" id="temp">34&deg;C</div>
+                <div class="min-max" id="min-max">32&deg;C (min) / 34&deg;C (max)</div>
+                <div class="weather" id="weather">Clear</div>
+                <div class="weather-icon" id="weather-icon"></div> <!-- Change "img" to "weather-icon" -->
+            </div>
+        </div>
+    </div>
 
-
-</header>
-
+    <script src="app.js"></script>
 </body>
 </html>
